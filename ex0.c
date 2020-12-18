@@ -6,7 +6,7 @@ void main()
     int x,i;
     scanf("%d",&x);
     int *p = NULL;
-    p = (int*) malloc(x);
+    p = (int*) malloc(x*sizeof(int));
     srand(time(NULL));
     for(i=0;i<x;i++){
         p[i]=rand();
