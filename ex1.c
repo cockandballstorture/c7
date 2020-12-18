@@ -9,12 +9,11 @@ void main()
     int a[x][y];
     int *p=(int*)a;
     e=x*y;
-    p=(int *)malloc(e);
+    p=(int *)malloc(e*sizeof(int));
     srand(time(NULL));
     for(i=0;i<y;i++){
         for (j=0;j<x;j++){
-          *p=rand();
-          p++;
+          p[i]=rand();
           printf("%d  ",*p);
         }
       printf("\n");
