@@ -3,7 +3,8 @@
 #include <stdlib.h>
 void main()
 {
-    int x,y,i;
+    int x,i;
+    float y;
     char *p;
     char h[255];
     char q[5]="STOP";
@@ -14,7 +15,7 @@ void main()
       p = (char*) malloc(strlen(h) * sizeof(char));
       *p=h;
       x=1;
-      y=strlen(h);
+      y=strlen(h)+y;
       for(i=0;i<strlen(h);i++){
             h[i]=0;
         }
@@ -34,7 +35,8 @@ void main()
         y=y+strlen(h);
         }
         else{
-        printf("%d,%d",x,y);
+        y=y/x;
+        printf("%d,%f",x,y);
         free(p);
         exit(0);
         }
@@ -42,7 +44,4 @@ void main()
             h[i]=0;
         }
     }
-    y=y/x;
-    printf("%d,%d",x,y);
-    free(p);
 }
