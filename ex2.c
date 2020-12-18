@@ -13,7 +13,7 @@ void main()
     int x,i;
     scanf("%d",&x);
     int *p = NULL;
-    p = (int*) malloc(x);
+    p = (int*) malloc(x*sizeof(int));
     aaa(p,x);
     for(i=0;i<x;i++){
         printf("%d\n",p[i]);
