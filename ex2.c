@@ -18,8 +18,5 @@ void main()
     for(i=0;i<x;i++){
         printf("%d\n",p[i]);
     }
-    for(i=0;i<x;i++){
-        free(p[i]);
-    }
     free(p);
 }
