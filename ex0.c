@@ -12,8 +12,5 @@ void main()
         p[i]=rand();
         printf("%d\n",p[i]);
     }
-    for(i=0;i<x;i++){
-        free(p[i]);
-    }
     free(p);
 }
